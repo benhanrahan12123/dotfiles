@@ -14,3 +14,11 @@ two different folders due to different configurations
 
 stow -n -v -d ~/dotfiles/Laptop -t ~ hypr
 
+readlink -f .config/kitty/kitty.conf // it will print the absolute path
+
+example
+
+[ben1@archpc12 kitty]$ readlink -f kitty.conf 
+/home/ben1/dotfiles/PC/kitty/.config/kitty/kitty.conf
+[ben1@archpc12 kitty]$ pwd
+/home/ben1/.config/kitty
