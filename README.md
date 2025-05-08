@@ -12,5 +12,5 @@ we will see a "dry run" of where our symlinks will be placed. remove -n from the
 
 two different folders due to different configurations
 
-stow -n -v -d ~/dotfiles/Pc -t ~ hypr
+stow -n -v -d ~/dotfiles/Laptop -t ~ hypr
 
