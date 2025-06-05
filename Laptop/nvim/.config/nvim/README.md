@@ -2,6 +2,6 @@
 
 Here are some screenshots of my setup:
 
-![Neovim Start Screen](screenshots/neovim-start.png)
+![Neovim Start Screen](screenshots/initLua.png)
 
-![Neovim Code Editing](screenshots/neovim-edit.png)
+![Neovim Code Editing](screenshots/bufferLine.png)
