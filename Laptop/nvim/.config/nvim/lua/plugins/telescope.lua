@@ -1,6 +1,5 @@
 -- live grep will not work if the required package is not installed on your OS, rg --version to check, sudo pacman -S ripgrep
 
-
 return {
   'nvim-telescope/telescope.nvim',
   event = 'VimEnter',
