@@ -1,3 +1,4 @@
+```
 before using stow, we have to make sure there is no pre-existing config e.g if we are stowing neovim, there can't be an existing ~/.config/nvim
 
 sudo pacman -S stow
@@ -10,20 +11,21 @@ so in the above example we are symlinking ~/.config/nvim/ to ~/dotfiles/common/n
 ➜ dotfiles git:(master) ✗ tree common/nvim -a -L 4
 common/nvim
 └── .config
-└── nvim
-├── init.lua
-├── lazy-lock.json
-├── lua
-│   ├── core
-│   └── plugins
-├── README.md
-├── screenshots
-│   ├── bufferline.png
-│   └── initLua.png
-└── .stylua.toml
+    └── nvim
+        ├── init.lua
+        ├── lazy-lock.json
+        ├── lua
+        │   ├── core
+        │   └── plugins
+        ├── README.md
+        ├── screenshots
+        │   ├── bufferline.png
+        │   └── initLua.png
+        └── .stylua.toml
 
 7 directories, 6 files
 
 ➜ ~ readlink -f ~/.config/nvim
 /home/ben1/dotfiles/common/nvim/.config/nvim
 ➜ ~
+```
