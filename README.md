@@ -1,24 +1,29 @@
-MAKE SURE THE RELEVANT CONFIG FOLDERS ARE EMPTY
+before using stow, we have to make sure there is no pre-existing config e.g if we are stowing neovim, there can't be an existing ~/.config/nvim
 
+sudo pacman -S stow
 
+stow -n -v -d ~/dotfiles/common -t ~ nvim # -n shows what the command will do but will not execute it, sort of like a trial run, -v is verbose, -d is directory, -t is target
 
-if stowing dotfiles for kitty, make sure ~/.config/kitty is just an empty directory
+so in the above example we are symlinking ~/.config/nvim/ to ~/dotfiles/common/nvim/, ~/.config/nvim points to ~/dotfiles/common/nvim/.config/nvim
+-t was passed the value ~, in the tree below, stow knows to target .config/nvim to ~/.config/nvim, it does this because the file path is common/nvim/.config/nvim, the first time it reads nvim stow knows it is a config so it symlinks the entire directories contents to ~/.config/nvim
 
-then when we execute
+➜ dotfiles git:(master) ✗ tree common/nvim -a -L 4
+common/nvim
+└── .config
+└── nvim
+├── init.lua
+├── lazy-lock.json
+├── lua
+│   ├── core
+│   └── plugins
+├── README.md
+├── screenshots
+│   ├── bufferline.png
+│   └── initLua.png
+└── .stylua.toml
 
-stow -n -v -d ~/dotfiles/PC -t ~ hypr
+7 directories, 6 files
 
-we will see a "dry run" of where our symlinks will be placed. remove -n from the command if the output is correct
-
-two different folders due to different configurations
-
-stow -n -v -d ~/dotfiles/Laptop -t ~ hypr
-
-readlink -f .config/kitty/kitty.conf // it will print the absolute path
-
-example
-
-[ben1@archpc12 kitty]$ readlink -f kitty.conf 
-/home/ben1/dotfiles/PC/kitty/.config/kitty/kitty.conf
-[ben1@archpc12 kitty]$ pwd
-/home/ben1/.config/kitty
+➜ ~ readlink -f ~/.config/nvim
+/home/ben1/dotfiles/common/nvim/.config/nvim
+➜ ~
