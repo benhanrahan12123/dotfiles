@@ -111,9 +111,10 @@
             "tooltip-format-deactivated":"Caffeine Mode Inactive"
         }, */
         "clock": {
-            "format": "{:%I:%M %p}",
+            "interval": 1, // this updates the clock every second
+            "format": "{:%I:%M:%S %p}",
             "rotate": 0,
-            "format-alt": "{:%R 󰃭 %d·%m·%y}",
+            "format-alt": "{:%R:%S 󰃭 %d·%m·%y}",
             "tooltip-format": "<span>{calendar}</span>",
             "calendar": {
                 "mode": "month",
@@ -240,7 +241,7 @@
             "format": "{}",
             "rotate": 0,
             "on-click": "hyprctl dispatch exec 'systemupdate.sh up'",
-            "interval": 86400, // once every day
+            "interval": 3600, // once every hour
             "tooltip": true,
             "signal": 20,
         },
