@@ -177,7 +177,7 @@
         },
     
         "backlight": {
-            "device": "intel_backlight",
+            "device": "auto",
             "rotate": 0,
             "format": "{icon} {percent}%",
             "format-icons": ["", "", "", "", "", "", "", "", ""],
