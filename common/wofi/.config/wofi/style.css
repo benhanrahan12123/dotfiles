@@ -11,6 +11,7 @@ window {
   border: 1px solid #313244;
   border-radius: 12px;
   background-color: #11111b;
+  opacity: 0.8;
 }
 
 #input {
