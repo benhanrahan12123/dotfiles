@@ -1,2 +1,8 @@
 *.pyc
 __pycache__/
+
+# Ignore everything in the mediainfo.yazi plugin folder
+common/yazi/.config/yazi/plugins/mediainfo.yazi/*
+# But keep the main.lua file
+!common/yazi/.config/yazi/plugins/mediainfo.yazi/main.lua
+
