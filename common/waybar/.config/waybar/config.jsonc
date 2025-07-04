@@ -201,7 +201,7 @@
         },
     "mpd": {
         "format": "{stateIcon} {artist} - {title} ",
-        "format-stopped": "",
+        "format-stopped": "󰝛",
         "interval": 5
     },
     
