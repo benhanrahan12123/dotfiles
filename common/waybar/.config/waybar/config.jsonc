@@ -7,10 +7,10 @@
   "modules-right": [
     "mpd",
     "backlight",
-    "cpu",
     "custom/cpuinfo",
     "custom/gpuinfo",
     "custom/gpuinfo#nvidia",
+    "cpu",
     "memory",
     "network",
     "pulseaudio",
