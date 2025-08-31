@@ -114,10 +114,22 @@
     "interval": 10,
   },
   "pulseaudio": {
-    "format": " {volume}%",
+    "format": "{icon} {volume}",
     "scroll-step": 1,
     "on-click": "pavucontrol",
+    "tooltip-format": "{icon} {desc} // {volume}%",
+    "scroll-step": 5,
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""],
+    },
   },
+
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "rotate": 0,
