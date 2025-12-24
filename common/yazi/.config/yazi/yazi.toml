@@ -59,15 +59,20 @@ play = [
 zathura = [
 	{ run = 'zathura "$@"', desc = "Zathura", for = "linux" },
 ]
+swayimg = [
+    { run = 'swayimg "$@"', desc = "swayimg", for = "linux" },
+]
 
 [open]
 rules = [
 	# Folder
 	{ name = "*/", use = [ "edit", "open", "reveal" ] },
+    # .ini files
+    { name = "*.ini", use = [ "edit", "reveal" ] },
 	# Text
 	{ mime = "text/*", use = [ "edit", "reveal" ] },
 	# Image
-	{ mime = "image/*", use = [ "open", "reveal" ] },
+	{ mime = "image/*", use = [ "swayimg", "reveal" ] },
 	# Media
 	{ mime = "{audio,video}/*", use = [ "play", "reveal" ] },
 	# Archive

@@ -18,3 +18,11 @@ vim.opt.scrolloff = 4        -- no. lines to appear above and below the cursor
 vim.opt.swapfile = false     -- NO SWAPFILE
 
 vim.opt.termguicolors = true -- we need this for the 'norcalli/nvim-colorizer.lua' plugin
+
+-- Tree-sitter based folding
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+
+-- Optional but recommended
+vim.opt.foldenable = true
+vim.opt.foldlevel = 99 -- open all folds by default
