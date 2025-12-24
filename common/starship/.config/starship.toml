@@ -15,6 +15,7 @@ $package\
 $aws\
 $docker_context\
 $jobs\
+$localip\
 $cmd_duration\
 $line_break\
 $character"""
@@ -25,7 +26,7 @@ palette = 'nord'
 [directory]
 style = 'bold fg:dark_blue'
 format = '[$path ]($style)'
-truncation_length = 3
+truncation_length = 5
 truncation_symbol = '…/'
 truncate_to_repo = false
 
@@ -107,6 +108,11 @@ format = '[$symbol]($style)'
 min_time = 500
 style = 'fg:gray'
 format = '[ $duration]($style)'
+
+[localip]
+ssh_only = true
+format = '@[$localipv4](bold red) '
+disabled = false
 
 [palettes.nord]
 dark_blue = '#5E81AC'
