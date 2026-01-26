@@ -1,34 +1,44 @@
 [[plugin.deps]]
 use = "boydaihungst/mediainfo"
-rev = "a15cdfa"
-hash = "fd68a58b03aee95546afe78cba77b461"
+rev = "ae2a1f1"
+hash = "b2afd25ad3ac851adf2a1b706d1a2add"
 
 [[flavor.deps]]
 use = "tkapias/moonfly"
 rev = "395c686"
-hash = "f1c75db953010661073c665c237c5722"
+hash = "11223984767b762067b2ae07815fb43b"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
-rev = "d04a298"
-hash = "7b9ff01a0070cc9176e0c683329aeb26"
+rev = "ca61658"
+hash = "8589ae0231756a9daf9c072f31b1fe0"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-macchiato"
-rev = "d3fd3a5"
-hash = "e6c5beeb1da3199355734273ee452a7f"
+rev = "ca61658"
+hash = "2f60298d6c26b6d388c8091a9389fa8f"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"
-rev = "d3fd3a5"
-hash = "d659c6fde5148fb5c066518d7fdecddc"
+rev = "ca61658"
+hash = "e25fb61c14484de843b52430a72b5196"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
-rev = "5f56364"
-hash = "c0bf69ad2c44005892d586e9693993c6"
+rev = "8e6296f"
+hash = "d9da921c3bd37ba32ee27a8a7a40461f"
 
 [[flavor.deps]]
 use = "PinThePenguinOne/sunset"
 rev = "64ad82e"
-hash = "ae36775ed414cad1bcd7af692422df0f"
+hash = "ee0dd4b99ed29625a20a5d25cbe192ce"
+
+[[flavor.deps]]
+use = "dangooddd/kanagawa"
+rev = "04985d1"
+hash = "c69a63981e254a3a06a11c2bf0e6af1d"
+
+[[flavor.deps]]
+use = "malick-tammal/monokai"
+rev = "97110ca"
+hash = "17b34be0a0dbd22d4f3d19ac6c2ef0cc"

@@ -3,7 +3,7 @@
 </div>
 
 <h3 align="center">
-	Onedark Flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
+	Monokai flavor for <a href="https://github.com/sxyazi/yazi">Yazi</a>
 </h3>
 
 ## 👀 Preview
@@ -12,23 +12,23 @@
 
 ## 🎨 Installation
 
-```bash
-# Linux/macOS
-git clone https://github.com/BennyOe/onedark.yazi.git ~/.config/yazi/flavors/onedark.yazi
 
-# Windows
-git clone https://github.com/BennyOe/onedark.yazi.git %AppData%\yazi\config\flavors\onedark.yazi
+```sh
+ya pkg add malick-tammal/monokai
 ```
 
 ## ⚙️ Usage
 
-Add the these lines to your `theme.toml` configuration file to use it:
-
+Add it to your `theme.toml` as dark flavor:
 
 ```toml
 [flavor]
-dark = "onedark"
+dark = "monokai"
 ```
+
+Make sure your `theme.toml` doesn't contain anything other than `[flavor]`, unless you want to override certain styles of this flavor.
+
+See the [Yazi flavor documentation](https://yazi-rs.github.io/docs/flavors/overview) for more details.
 
 ## 📜 License
 
