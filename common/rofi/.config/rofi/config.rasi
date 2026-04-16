@@ -1,6 +1,6 @@
 configuration {
     drun-display-format: "{icon} {name}";
-    font: "FiraCode Nerd Font 12";
+    font: "Iosevka Nerd Font 12";
     show-icons: true;
 }
 
