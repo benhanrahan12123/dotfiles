@@ -73,3 +73,4 @@ alias mv='mv -v'
 #  | fzf --multi --preview 'yay -Sii {1}' \
 #         --preview-window=down:75% \
 #  | xargs -ro yay -S"
+export PATH="$HOME/.npm-global/bin:$PATH"
