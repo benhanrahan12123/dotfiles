@@ -15,7 +15,10 @@
     "backlight",
     "pulseaudio",
     "battery",
-    "clock"
+    "clock",
+    "custom/padd",
+    "custom/pacman",
+    "custom/r_end"
   ],
   "group/tray-drawer": {
     "orientation": "horizontal",
@@ -51,7 +54,6 @@
       "10": "10",
       "default": ""
     }
-  },
   },
   "clock": {
     "format": "{:%H:%M}",
@@ -123,6 +125,24 @@
     "format-stopped": "",
     "max-length": 55
   },
+"custom/pacman": {
+    "format": "󰮯  {}",
+    "interval": 3600,
+    "exec": "checkupdates | wc -l",
+    "exec-if": "exit 0",
+    "signal": 8
+  },
+    "custom/r_end": {
+    "format": "   ",
+    "interval": "once",
+    "tooltip": false,
+  },
+  "custom/padd": {
+    "format": "  ",
+    "interval": "once",
+    "tooltip": false,
+  }
+
 }
 
 
