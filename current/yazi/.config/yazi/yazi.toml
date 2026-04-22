@@ -62,6 +62,9 @@ download = [
 	{ run = "ya emit download --open %S", desc = "Download and open" },
 	{ run = "ya emit download %S",        desc = "Download" },
 ]
+open_pdf = [
+    { run = "zathura %s1", desc = "Zathura", for = "linux", orphan = true },
+]
 
 [open]
 rules = [
@@ -81,6 +84,8 @@ rules = [
 	{ mime = "inode/empty", use = [ "edit", "reveal" ] },
 	# Virtual file system
 	{ mime = "vfs/{absent,stale}", use = "download" },
+	# zathura
+	{ mime = "application/pdf", use = [ "open_pdf", "reveal" ] },
 	# Fallback
 	{ url = "*", use = [ "open", "reveal" ] },
 ]
