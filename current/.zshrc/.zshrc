@@ -74,3 +74,4 @@ alias mv='mv -v'
 #         --preview-window=down:75% \
 #  | xargs -ro yay -S"
 export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
