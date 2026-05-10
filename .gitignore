@@ -6,3 +6,5 @@ common/yazi/.config/yazi/plugins/mediainfo.yazi/*
 # But keep the main.lua file
 !common/yazi/.config/yazi/plugins/mediainfo.yazi/main.lua
 
+# ignore the lazy-lock.json
+current/nvim/.config/nvim/lazy-lock.json
