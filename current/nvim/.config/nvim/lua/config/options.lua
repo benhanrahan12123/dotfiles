@@ -1,18 +1,17 @@
-
 -- Basic Settings
 vim.opt.number = true -- line numbers
 vim.opt.relativenumber = true -- relative line numbers
 vim.opt.cursorline = true -- highlight current line
 vim.opt.scrolloff = 10 -- keep 10 lines above/below cursor
 vim.opt.sidescrolloff = 8 -- keep 8 columns left/right of the cursor
-vim.opt.wrap = false -- don't wrap lines
+vim.opt.wrap = true -- don't wrap lines
 vim.opt.cmdheight = 1 -- command line height
 vim.opt.spelllang = { "en", "de" } -- set language for spellchecking
 
 -- Tabbing / Indentation
 vim.opt.tabstop = 2 -- tab width
 vim.opt.shiftwidth = 2 -- indent width
-vim.opt.softtabstop =2 -- soft tab stop
+vim.opt.softtabstop = 2 -- soft tab stop
 vim.opt.expandtab = true -- use spaces instead of tabs
 vim.opt.smartindent = true -- smart auto-indenting
 vim.opt.autoindent = true -- copy indent from the current line
@@ -41,7 +40,7 @@ vim.opt.concealcursor = "" -- show markup even on cursor line
 vim.opt.lazyredraw = false -- redraw while executing macros (better UX)
 vim.opt.redrawtime = 10000 -- timeout for syntax highlighting redraw
 vim.opt.maxmempattern = 20000 -- max memory for pattern matching
-vim.opt.synmaxcol = 300 -- syntac highlighting column limit
+vim.opt.synmaxcol = 300 -- syntax highlighting column limit
 
 -- File Handling
 vim.opt.backup = false -- don't create backup files
