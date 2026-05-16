@@ -42,7 +42,6 @@ return {
 				format = lspkind.cmp_format({
 					mode = "symbol_text",
 					menu = {
-						codeium = "",
 						luasnip = "",
 						buffer = "",
 						path = "",
