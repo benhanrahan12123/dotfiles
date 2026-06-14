@@ -3,3 +3,6 @@ __pycache__/
 
 # ignore the lazy-lock.json
 current/nvim/.config/nvim/lazy-lock.json
+
+# zsh plugins self-install on first launch, don't track them
+current/zsh/.config/zsh/plugins/
