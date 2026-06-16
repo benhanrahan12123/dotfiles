@@ -2,7 +2,9 @@
 
 add_newline = false
 
-format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character $fill $localip $cmd_duration"
+format = """$directory$os$git_branch$git_status$nodejs$rust$golang$php$fill$localip$cmd_duration
+$character """
+
 
 [os]
 disabled = false
