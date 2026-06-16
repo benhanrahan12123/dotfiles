@@ -2,7 +2,7 @@
 
 add_newline = false
 
-format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character"
+format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character $localip $cmd_duration"
 
 [os]
 disabled = false
@@ -55,3 +55,13 @@ format = "[$symbol $version](purple) "
 success_symbol = "[❯](green)"
 error_symbol   = "[❯](red)"
 vimcmd_symbol  = "[❮](blue)"
+
+[cmd_duration]
+min_time = 500
+style = 'fg:gray'
+format = '[ $duration]($style)'
+
+[localip]
+ssh_only = true
+format = '@[$localipv4](bold red) '
+disabled = false
