@@ -3,7 +3,7 @@
 add_newline = false
 
 format = """$directory$os$git_branch$git_status$nodejs$rust$golang$php$fill$localip$cmd_duration
-$character """
+$character"""
 
 
 [os]
