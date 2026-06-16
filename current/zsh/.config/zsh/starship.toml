@@ -2,7 +2,7 @@
 
 add_newline = false
 
-format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character $localip $cmd_duration"
+format = "$directory$os$git_branch$git_status$nodejs$rust$golang$php $character $fill $localip $cmd_duration"
 
 [os]
 disabled = false
@@ -65,3 +65,6 @@ format = '[ $duration]($style)'
 ssh_only = true
 format = '@[$localipv4](bold red) '
 disabled = false
+
+[fill]
+symbol = ' '
