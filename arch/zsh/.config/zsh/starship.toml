@@ -2,7 +2,7 @@
 
 add_newline = false
 
-format = """$directory$os$git_branch$git_status$nodejs$rust$golang$php$fill$localip$cmd_duration
+format = """$directory$os$git_branch$git_status$nodejs$rust$golang$php$python$lua$bun$fill$localip$cmd_duration
 $character"""
 
 
@@ -38,12 +38,18 @@ deleted    = "[✘$count ](bold red)"
 conflicted = "[⚡$count ](bold red)"
 
 [nodejs]
-symbol = ""
-format = "[$symbol $version](green) "
+style = 'blue'
+symbol = ' '
+format = "[$symbol$version ]($style)"
+
+[bun]
+symbol = "🥟 "
+style = "magenta"
+format = "[$symbol$version]($style)"
 
 [rust]
-symbol = ""
-format = "[$symbol $version](red) "
+style = 'orange'
+symbol = ' '
 
 [golang]
 symbol = ""
@@ -52,6 +58,15 @@ format = "[$symbol $version](cyan) "
 [php]
 symbol = ""
 format = "[$symbol $version](purple) "
+
+[python]
+style = 'teal'
+symbol = ' '
+format = "[$symbol$version($virtual_env)]($style) "
+pyenv_version_name = false
+
+[lua]
+symbol = ' '
 
 [character]
 success_symbol = "[❯](green)"
