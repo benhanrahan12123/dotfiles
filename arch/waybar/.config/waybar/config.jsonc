@@ -15,6 +15,7 @@
     "cpu",
     "memory",
     "pulseaudio",
+    "backlight",
     "battery",
     "custom/updates",
     "tray"
@@ -75,6 +76,17 @@
         "󰕾"
       ]
     }
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "󰃞",
+      "󰃟",
+      "󰃠"
+    ],
+    "on-scroll-up": "brightnessctl set +1%",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "tooltip": false
   },
   "battery": {
     "interval": 5,
