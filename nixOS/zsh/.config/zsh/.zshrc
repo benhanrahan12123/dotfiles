@@ -82,9 +82,6 @@ source "$ZDOTDIR/aliases.zsh"
 # Custom keybindings
 source "$ZDOTDIR/bindings.zsh"
 
-# Plugins and plugin manager
-source "$ZDOTDIR/plugins.zsh"
-
 # Prompt/theme
 source "$ZDOTDIR/prompt.zsh"
 
