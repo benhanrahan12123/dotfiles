@@ -98,6 +98,5 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 [ -s "/home/ben1/.bun/_bun" ] && source "/home/ben1/.bun/_bun"
 
-
-
-
+# doom emacs
+export PATH="$HOME/.config/emacs/bin:$PATH"
